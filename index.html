@@ -1195,14 +1195,15 @@
       <div class="curr-card reveal">
         <div class="curr-card-header">
           <div class="curr-icon">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="Database">
           </div>
-          <span class="curr-title">Database</span>
+          <span class="curr-title">Database &amp; Queue</span>
         </div>
         <ul class="curr-items">
           <li>MongoDB &amp; Mongoose ODM</li>
-          <li>Redis — caching &amp; session storage</li>
-          <li>BullMQ background jobs &amp; queues with Redis</li>
+          <li>Redis — caching, rate limiting, session storage</li>
+          <li>BullMQ — background jobs, delayed jobs, queues</li>
+          <li>Atomic operations using Lua scripts</li>
         </ul>
       </div>
 
@@ -1214,11 +1215,42 @@
           <span class="curr-title">Auth &amp; Security</span>
         </div>
         <ul class="curr-items">
-          <li>Request validation &amp; sanitization — Zod (primary), Joi</li>
-          <li>Authentication — Cookies, JWT, OAuth2, session management</li>
-          <li>Password hashing (bcrypt), access &amp; refresh tokens, RBAC</li>
-          <li>CORS, Helmet, rate limiting (token bucket, sliding window)</li>
+          <li>Request validation &amp; sanitization — Zod</li>
+          <li>Authentication — JWT, Cookies, OAuth2 (Google)</li>
+          <li>Password hashing (bcrypt), access &amp; refresh tokens rotation</li>
+          <li>RBAC &amp; authorization middleware</li>
+          <li>CORS, Helmet, rate limiting</li>
           <li>XSS &amp; CSRF protection</li>
+        </ul>
+      </div>
+
+      <div class="curr-card reveal">
+        <div class="curr-card-header">
+          <div class="curr-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg" alt="Realtime">
+          </div>
+          <span class="curr-title">Real-time &amp; Events</span>
+        </div>
+        <ul class="curr-items">
+          <li>Socket.io — real-time communication</li>
+          <li>Redis Adapter for scaling WebSockets</li>
+          <li>Event-driven architecture</li>
+          <li>Queue &amp; booking live updates</li>
+        </ul>
+      </div>
+
+      <div class="curr-card reveal">
+        <div class="curr-card-header">
+          <div class="curr-icon">
+            <img src="https://simpleicons.org/icons/cloudinary.svg" alt="Media">
+          </div>
+          <span class="curr-title">Media &amp; External Services</span>
+        </div>
+        <ul class="curr-items">
+          <li>Cloudinary — file upload &amp; storage</li>
+          <li>Multer — handling multipart/form-data</li>
+          <li>Nodemailer — email services (OTP, reset password)</li>
+          <li>Google OAuth integration</li>
         </ul>
       </div>
 
@@ -1231,11 +1263,10 @@
           <span class="curr-title">Performance &amp; Reliability</span>
         </div>
         <ul class="curr-items">
-          <li>Redis caching &amp; response compression</li>
-          <li>Node.js design patterns &amp; global error handling</li>
-          <li>File uploads — Multer &amp; Cloudinary</li>
-          <li>Email service — Nodemailer / Resend (OTP, password reset)</li>
-          <li>Logging — Morgan, Winston / Pino</li>
+          <li>Redis caching &amp; optimization</li>
+          <li>Compression &amp; response optimization</li>
+          <li>Global error handling &amp; async handling</li>
+          <li>Logging — Pino / Winston</li>
           <li>Health checks &amp; graceful shutdown</li>
           <li>API documentation — Swagger / OpenAPI</li>
         </ul>
@@ -1251,7 +1282,7 @@
         <ul class="curr-items">
           <li>Git &amp; GitHub</li>
           <li>Postman — API testing</li>
-          <li>npm &amp; package management</li>
+          <li>npm — package management</li>
           <li>VS Code</li>
         </ul>
       </div>
@@ -1268,6 +1299,46 @@
     </div>
 
     <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <div class="project-img">
+          <img src="images/EventBookingSystem.png" alt="Event Booking System Preview">
+        </div>
+
+        <div>
+          <p class="project-name">Event Booking & Queue Management System</p>
+
+          <p class="project-desc">
+            A production-grade booking system with real-time queue management and atomic slot reservations using Redis
+            Lua scripts.
+            Features JWT authentication, refresh token rotation, BullMQ workers for background jobs, and WebSocket
+            notifications
+            for live updates. Designed with clean architecture and built for high concurrency and scalability.
+          </p>
+
+          <div class="project-pills">
+            <span class="pill">Node.js</span>
+            <span class="pill">TypeScript</span>
+            <span class="pill">Express.js</span>
+            <span class="pill">MongoDB</span>
+            <span class="pill">Redis</span>
+            <span class="pill">BullMQ</span>
+            <span class="pill">Socket.io</span>
+            <span class="pill">JWT</span>
+            <span class="pill">RBAC</span>
+            <span class="pill">Zod</span>
+            <span class="pill">Clean Architecture</span>
+          </div>
+
+          <a href="https://github.com/Joo-Shohber/Booking-System.git" target="_blank" class="project-link-btn">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.6.11.793-.26.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.838 1.236 1.838 1.236 1.07 1.835 2.807 1.305 3.492.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.4 3-.405 1.02.005 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22v3.293c0 .319.192.694.8.576C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
+            </svg>
+            GitHub ↗
+          </a>
+        </div>
+      </div>
 
       <div class="project-card reveal">
         <div class="project-img">
@@ -1497,6 +1568,12 @@
       { name: 'GitHub', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg' },
       { name: 'Postman', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg' },
       { name: 'VS Code', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg' },
+      { name: 'Socket.io', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg' },
+      { name: 'Zod', src: 'https://raw.githubusercontent.com/colinhacks/zod/master/logo.svg' },
+      { name: 'Cloudinary', src: 'https://simpleicons.org/icons/cloudinary.svg' },
+      { name: 'OAuth', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg' },
+      { name: 'BullMQ', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg' },
+      { name: 'Nodemailer', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
     ];
 
     const track = document.getElementById('logosTrack');
