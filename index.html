@@ -13,38 +13,46 @@
   <style>
     /* ===== THEME VARIABLES ===== */
     [data-theme="dark"] {
-      --bg: #0e0f1a;
-      --bg2: #151735;
-      --bg3: #1c1f44;
-      --surface: #22255a;
-      --border: rgba(140, 120, 255, 0.18);
-      --border2: rgba(140, 120, 255, 0.35);
-      --text: #f0efff;
-      --text-dim: #a2a0d8;
-      --text-faint: #6a6895;
-      --accent: #9a7bff;
-      --accent2: #6fa8ff;
-      --accent3: #c4b5fd;
-      --glow: rgba(154, 123, 255, 0.25);
-      --glow2: rgba(111, 168, 255, 0.15);
-      --noise: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      --bg: #0b0c14;
+      --bg2: #121326;
+      --bg3: #191a35;
+      --surface: #1f2147;
+
+      --border: rgba(120, 130, 255, 0.15);
+      --border2: rgba(120, 130, 255, 0.35);
+
+      --text: #f5f6ff;
+      --text-dim: #b3b6ff;
+      --text-faint: #7a7db3;
+
+      --accent: #7c5cff;
+      --accent2: #00d4ff;
+      --accent3: #a78bfa;
+
+      --glow: rgba(124, 92, 255, 0.25);
+      --glow2: rgba(0, 212, 255, 0.2);
+
+      --noise: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
     }
 
     [data-theme="light"] {
-      --bg: #faf9ff;
-      --bg2: #f3f2ff;
-      --bg3: #eeecff;
+      --bg: #f7f8ff;
+      --bg2: #eef0ff;
+      --bg3: #e5e8ff;
       --surface: #ffffff;
-      --border: rgba(120, 100, 255, 0.18);
-      --border2: rgba(120, 100, 255, 0.35);
-      --text: #1f1d3a;
-      --text-dim: #5c5a85;
-      --text-faint: #b0aed6;
-      --accent: #7a5cff;
-      --accent2: #3a7bff;
-      --accent3: #9a7bff;
-      --glow: rgba(122, 92, 255, 0.12);
-      --glow2: rgba(58, 123, 255, 0.1);
+
+      --border: rgba(100, 110, 255, 0.15);
+      --border2: rgba(100, 110, 255, 0.3);
+
+      --text: #1a1c35;
+      --text-dim: #5f628f;
+      --text-faint: #a5a8d6;
+
+      --accent: #6d4cff;
+      --accent2: #009dff;
+      --accent3: #8b5cf6;
+      --glow: rgba(109, 76, 255, 0.12);
+      --glow2: rgba(0, 157, 255, 0.1);
       --noise: none;
     }
 
@@ -1450,29 +1458,17 @@
               <span class="contact-link-val">+20 150 158 0498</span>
             </div>
           </a>
-          <a href="https://github.com/Joo-Shohber" target="_blank" class="contact-link">
+
+          <a href="mailto:yousefshohber@gmail.com" class="contact-link">
             <div class="contact-link-icon">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.6.11.793-.26.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.838 1.236 1.838 1.236 1.07 1.835 2.807 1.305 3.492.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.4 3-.405 1.02.005 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22v3.293c0 .319.192.694.8.576C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <polyline points="2,4 12,13 22,4" />
               </svg>
             </div>
             <div class="contact-link-text">
-              <span class="contact-link-label">GitHub</span>
-              <span class="contact-link-val">github.com/Joo-Shohber</span>
-            </div>
-          </a>
-          <a href="https://www.linkedin.com/in/yousef-mohamed-abdel-rahman-389280314/" target="_blank"
-            class="contact-link">
-            <div class="contact-link-icon">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-              </svg>
-            </div>
-            <div class="contact-link-text">
-              <span class="contact-link-label">LinkedIn</span>
-              <span class="contact-link-val">yousef-mohamed-abdel-rahman</span>
+              <span class="contact-link-label">Email</span>
+              <span class="contact-link-val">yousefshohber@gmail.com</span>
             </div>
           </a>
           <a href="https://www.facebook.com/yousef.m.abdelrahman" target="_blank" rel="noopener noreferrer"
@@ -1485,19 +1481,20 @@
             </div>
             <div class="contact-link-text">
               <span class="contact-link-label">Facebook</span>
-              <span class="contact-link-val">yousef.m.abdelrahman</span>
+              <span class="contact-link-val">Yousef Shohber</span>
             </div>
           </a>
-          <a href="mailto:yousefshohber@gmail.com" class="contact-link">
+          <a href="https://www.linkedin.com/in/yousef-mohamed-abdel-rahman-389280314/" target="_blank"
+            class="contact-link">
             <div class="contact-link-icon">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="2" y="4" width="20" height="16" rx="2" />
-                <polyline points="2,4 12,13 22,4" />
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
               </svg>
             </div>
             <div class="contact-link-text">
-              <span class="contact-link-label">Email</span>
-              <span class="contact-link-val">yousefshohber@gmail.com</span>
+              <span class="contact-link-label">LinkedIn</span>
+              <span class="contact-link-val">Yousef Shohber</span>
             </div>
           </a>
         </div>
